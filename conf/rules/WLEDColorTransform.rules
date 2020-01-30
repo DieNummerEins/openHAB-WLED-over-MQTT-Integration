@@ -1,0 +1,9 @@
+rule "WLED: Adapt Color Parameter to WLED Notation"
+when
+    Item WLED_Color received update
+then
+    val HSBType newState = triggeringItem.state
+    val rgb = 16777215 + newState.getRGB
+    val mqttActions = getActions("mqtt","mqtt:broker:system")
+    mqttActions.publishMQTT("wled/785f2a/col","" + rgb)
+end
