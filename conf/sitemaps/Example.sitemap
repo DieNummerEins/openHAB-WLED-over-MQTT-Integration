@@ -1,0 +1,11 @@
+sitemap example label="WLED Example" {
+    Frame {
+        Switch item=WLED_Switch
+        Slider item=WLED_Dimmer
+        Colorpicker item=WLED_Color
+        Selection item=WLED_Effect mappings=[0='Solid',1='Blink',2='Breathe',3='Wipe',4='Wipe_Random',5='Random_Colors',6='Sweep',7='Dynamic',8='Colorloop',9='Rainbow',10='Scan',11='Dual_Scan',12='Fade',13='Chase',14='Chase_Rainbow',15='Running',16='Saw',17='Twinkle',18='Dissolve',19='Dissolve_Rnd',20='Sparkle',21='Dark_Sparkle',22='Sparkle+',23='Strobe',24='Strobe_Rainbow',25='Mega_Strobe',26='Blink_Rainbow',27='Android',28='Chase',29='Chase_Random',30='Chase_Rainbow',31='Chase_Flash',32='Chase_Flash_Rnd',33='Rainbow_Runner',34='Colorful',35='Traffic_Light',36='Sweep_Random',37='Running_2',38='Red_&_Blue',39='Stream',40='Scanner',41='Lighthouse',42='Fireworks',43='Rain',44='Merry_Christmas',45='Fire_Flicker',46='Gradient',47='Loading',48='In_Out',49='In_In',50='Out_Out',51='Out_In',52='Circus',53='Halloween',54='Tri_Chase',55='Tri_Wipe',56='Tri_Fade',57='Lightning',58='ICU',59='Multi_Comet',60='Dual_Scanner',61='Stream_2',62='Oscillate',63='Pride_2015',64='Juggle',65='Palette',66='Fire_2012',67='Colorwaves',68='BPM',69='Fill_Noise',70='Noise_1',71='Noise_2',72='Noise_3',73='Noise_4',74='Colortwinkle',75='Lake',76='Meteor',77='Smooth_Meteor',78='Railway',79='Ripple',80='TwinkleFox']
+        Slider item=WLED_Effect_Speed
+        Slider item=WLED_Effect_Intensity
+        Selection item=WLED_Palette mappings=[1='Default',2='Random Cycle',3='Primary color',4='Based on primary',5='Set colors',06='Based on set',07='Party',08='Cloud',09='Lava',10='Ocean',11='Forest',12='Rainbow',13='Rainbow bands',14='Sunset',15='Rivendell',16='Breeze',17='Red & Blue',18='Yellowout',19='Analoguous',20='Splash',21='Pastel',22='Sunset 2',23='Beech',24='Vintage',25='Departure',26='Landscape',27='Beach',28='Sherbet',29='Hult',30='Hult 64',31='Drywet',32='Jul',33='Grintage',34='Rewhi',35='Tertiary',36='Fire',37='Icefire',38='Cyane',39='Light Pink',40='Autumn',41='Magenta',42='Magred',43='Yelmag',44='Yelblu',45='Orange & Teal',46='Tiamat',47='April Night',48='Orangery',49='C9',50='Sakura']
+    }
+}

@@ -1,0 +1,12 @@
+Bridge mqtt:broker:system "Bridge: MQTT" [ host="localhost", port=1883, secure="AUTO", username="<YOUR-USERNAME>", password="<YOUR-PASSWORD>" ] {
+    Thing topic WLED "WLED: Example" {
+        Channels:
+            Type switch : WLED_Switch    "WLED: Switch"    [ stateTopic="wled/785f2a/g", commandTopic="wled/785f2a", transformationPattern="MAP:WLED.map" ]
+            Type dimmer : WLED_Dimmer    "WLED: Dimmer"    [ stateTopic="wled/785f2a/g", commandTopic="wled/785f2a", min=0, max=255 ]
+            Type dimmer : WLED_Speed     "WLED: Speed"     [ stateTopic="wled/785f2a/api", commandTopic="wled/785f2a/api", min=0, max=255, formatBeforePublish="&SX=%s"  ]
+            Type dimmer : WLED_Intensity "WLED: Intensity" [ stateTopic="wled/785f2a/api", commandTopic="wled/785f2a/api", min=0, max=255, formatBeforePublish="&IX=%s" ]
+            Type number : WLED_Color     "WLED: Color"     [ commandTopic="wled/785f2a/col" ]
+            Type number : WLED_Effect    "WLED: Effect"    [ commandTopic="wled/785f2a/api", transformationPatternOut="MAP:WLEDEffectMapping.map" ]
+            Type number : WLED_Palette   "WLED: Palette"   [ commandTopic="wled/785f2a/api", transformationPatternOut="MAP:WLEDPaletteMapping.map" ]
+    }
+}

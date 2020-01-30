@@ -1,4 +1,4 @@
-default=NA
+=Unknown
 0=OFF
 1=ON
 2=ON
@@ -255,4 +255,3 @@ default=NA
 253=ON
 254=ON
 255=ON
-256=ON

@@ -1,0 +1,9 @@
+Group   Group_WLED              "WLED"                                                  
+
+Switch  WLED_Switch             "WLED"                  <lightbulb>     (Group_WLED)    
+Dimmer  WLED_Dimmer             "WLED Brightness"       <color>         (Group_WLED)    
+Color   WLED_Color              "WLED Color"            <colorlight>    (Group_WLED)    
+Number  WLED_Effect             "WLED Effect"           <mediacontrol>  (Group_WLED)    
+Dimmer  WLED_Effect_Speed       "WLED Effect Speed"     <time>          (Group_WLED)    
+Dimmer  WLED_Effect_Intensity   "WLED Effect Intensity" <chart>         (Group_WLED)    
+Number  WLED_Palette            "WLED Palette"          <rgb>           (Group_WLED)    
